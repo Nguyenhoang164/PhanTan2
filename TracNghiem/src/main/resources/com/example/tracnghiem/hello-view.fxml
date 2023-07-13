@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<VBox alignment="TOP_CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.tracnghiem.HelloController">
+    <Label text="Trac nghiem test EQ"/>
+    <VBox alignment="CENTER_LEFT">
+        <Label text="Câu 1: Có 1 ông đi săn, ổng đi vào 3 cái hang. Hang 1 ông ấy gặp một con ma, hang 2 ông gặp trái cà, hang 3 ông gặp một con rồng. Hỏi hang thứ tư ông gặp con gì?"/>
+        <RadioButton selected="true" text="A . Ma cà rồng" fx:id="chose1">
+            <toggleGroup>
+                <ToggleGroup fx:id="groupCau1" />
+            </toggleGroup>
+        </RadioButton>
+        <RadioButton text="B. Ma cà tưng " toggleGroup="$groupCau1"/>
+        <RadioButton text="C. Em gái cương thi đang nhảy trên nền nhạc tự tử " toggleGroup="$groupCau1"/>
+        <Label text="Câu 2 : Có cách nào xếp 5 que diêm thành 11 hình tam giác không?"/>
+        <RadioButton selected="true" text="A. Không xếp được">
+            <toggleGroup>
+                <ToggleGroup fx:id="groupCau2" />
+            </toggleGroup>
+        </RadioButton>
+        <RadioButton text=" B . Xếp được " toggleGroup="$groupCau2" fx:id="chose2" />
+        <RadioButton text="C. Bẻ nhỏ que diêm ra rồi ném đi" toggleGroup="$groupCau2" />
+        <Label text="Câu 3 : Nằm giữa Thái Bình Dương là gì?"/>
+        <RadioButton selected="true" text="A. Nước ">
+            <toggleGroup>
+                <ToggleGroup fx:id="groupCau3" />
+            </toggleGroup>
+        </RadioButton>
+        <RadioButton text="B. Cá " toggleGroup="$groupCau3"/>
+        <RadioButton text="C. Bình " toggleGroup="$groupCau3" fx:id="chose3" />
+        <Label text="Câu 4 : Một cậu bé thấy ngoài cổng làng có đám đông liền chạy lại xem, hóa ra có 2 người đang thách đố nhau, mỗi người nói ra 1 câu, nếu người kia không tin thì sẽ phải đưa người nói 5 đồng. Trong 2 người thì có 1 người rất thật thà nên bị thua còn kẻ vô lại kia lại thắng cuộc. Cậu bé thấy thế liền vào chơi hộ người thật thà. Theo bạn, cậu bé chỉ nói duy nhất câu gì?"/>
+        <RadioButton selected="true" text="A. Tôi là người thật thà.">
+            <toggleGroup>
+                <ToggleGroup fx:id="groupCau4" />
+            </toggleGroup>
+        </RadioButton>
+        <RadioButton text="B . Anh nợ tôi một triệu đồng. " toggleGroup="$groupCau4" fx:id="chose4"/>
+        <RadioButton text="C . Không quan tâm" toggleGroup="$groupCau4" />
+        <Label text="Câu 5 : Ném cái gì xuống biển sẽ không bao giờ tìm thấy?"/>
+        <RadioButton selected="true" text="A. Xác thằng cu nợ tiền tao ">
+            <toggleGroup>
+                <ToggleGroup fx:id="groupCau5" />
+            </toggleGroup>
+        </RadioButton>
+        <RadioButton text="B . Hạt cát " toggleGroup="$groupCau5"/>
+        <RadioButton text="C . Panadol extra " toggleGroup="$groupCau5"  fx:id="chose5"/>
+
+     <Button text="Submit" onAction="#onclick"/>
+</VBox>
+</VBox>
